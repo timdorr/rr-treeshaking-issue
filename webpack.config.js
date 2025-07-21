@@ -3,5 +3,12 @@ module.exports = {
   entry: './src/App.js',
   resolve: {
     extensions: ['.js']
+  },
+  module: {
+    parser: {
+      javascript: {
+        importExportsPresence: 'warn'
+      }
+    }
   }
 }
